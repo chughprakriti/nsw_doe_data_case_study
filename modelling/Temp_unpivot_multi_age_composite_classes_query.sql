@@ -1,4 +1,4 @@
-create table multi_age_composite_classes_final_2022_unpivot as
+create table multi_age_composite_classes_final_2022_unpivot_temp as
 select * from
 (
 UNPIVOT multi_age_composite_classes_final_2022
