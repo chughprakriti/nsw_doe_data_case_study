@@ -1,4 +1,4 @@
-create table attendance_data_final_2022_unpivot as
+create table main.attendance_data_final_2022_unpivot as
 select * from
 (
 UNPIVOT 

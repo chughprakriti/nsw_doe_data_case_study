@@ -1,4 +1,4 @@
-create or replace table finaldatamart as
+create or replace table main.finaldatamart as
 select master.*
 ,attendance.Year,Attendance,multi_age_composite_class
 from public_school_nsw_master_dataset as master
