@@ -1,6 +1,6 @@
 # New South Wales Department of Education (NSW DOE) - Data Case Study 🦘
 
-# The Case Study
+# The Case Study - All the work present in the Codespace and follow the steps below for better understanding.
 
 ## Step 1 - Download required CSVs data in the data folder of Codespace 
 
