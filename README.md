@@ -26,7 +26,7 @@ CREATE TABLE main.multi_age_composite_classes_final_2022 AS SELECT * FROM read_c
 
 **Step 3.2** - Trigger SQL Script(**/workspaces/nsw_doe_data_case_study/modelling/unpivot_multi_age_query.sql**) and it will generate Unpivot dataset for Multi Age Composite Classes table. 
 
-
+**Assumption** : It was not clear in the requirement that which column out of the four columns mentioned here (COMPOSITE_CLASS_COUNT,COMPOSITE_CLASS_STUDENTS,PCT_COMPOSITE_CLASSES,PCT_COMPOSITE_CLASS_STUDENTS) from 2022-multi-age_composite-classes-final.csv to choose for comparison with 2022-attendance-data-final.csv dataset. I have made an assumption by choosing PCT_COMPOSITE_CLASSES for comparison with Attendance dataset.
 
 ## Step 4 - Model the data and Create Final Data Mart for Analysis
 
