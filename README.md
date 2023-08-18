@@ -59,29 +59,32 @@ Uploaded Excel file named as FinalDataMart_Extract for exported data and Bar Gra
 **Findings Below**:
 
 **2022-attendance-data-final**
--> school_code has Null/Blank value for school_name = "NSW government".
 
--> Data for Year 2020 is missing. 
+* school_code has Null/Blank value for school_name = "NSW government".
 
--> There are some Junk Values like "na","sp",Nulls in all the Years columns.
+* Data for Year 2020 is missing. 
 
--> Needs to apply Unpivoting to convert all the years columns into raws.
+* There are some Junk Values like "na","sp",Nulls in all the Years columns.
+
+* Needs to apply Unpivoting to convert all the years columns into raws.
 
 **2022-multi-age_composite-classes-final**
--> There are some Null Values in the fields related to COMPOSITE Classes.
 
--> Data for Year 2020 is missing and no data prior to 2014. 
+* There are some Null Values in the fields related to COMPOSITE Classes.
 
--> Needs to apply Unpivoting to convert all the Composite class columns into raws and extracting Years from the Composite class columns.
+* Data for Year 2020 is missing and no data prior to 2014. 
+
+* Needs to apply Unpivoting to convert all the Composite class columns into raws and extracting Years from the Composite class columns.
 
 **public_school_nsw_master_dataset**
--> Some of the columns(Indigenous_pct,LBOTE_pct) have junk values like 'np'.
 
--> Date Format of the column(Date_1st_teacher) is not consistent.
+* Some of the columns(Indigenous_pct,LBOTE_pct) have junk values like 'np'.
 
--> AgeID has null value for two of the school codes ('8914', '5423').
+* Date Format of the column(Date_1st_teacher) is not consistent.
 
--> Nulls/Blanks are present in few other attribute columns.
+* AgeID has null value for two of the school codes ('8914', '5423').
+
+* Nulls/Blanks are present in few other attribute columns.
 
 **Confirming there is a significant impact on Attendance due to multi-age composite classes for all the years,
 as shown in the screeen-shot below for one of the school.**
