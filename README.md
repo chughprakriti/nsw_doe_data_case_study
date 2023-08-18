@@ -4,11 +4,15 @@
 
 **This case study scenerio covers the below:**
 
--> Data ingestion in the database by using CSV import methods.
--> Analysed source data files as part of data quality checks like Nullability checks, Unique constraints, Formatting, Junk Values etc.
--> Data transformation using SQL Unpivot function.
--> Data modelling by creating relation/join between the three tables.
--> Reporting/generating insights using Excel reporting.
+* Data ingestion in the database by using CSV import methods.
+
+* Analysed source data files as part of data quality checks like Nullability checks, Unique constraints, Formatting, Junk Values etc.
+
+* Data transformation using SQL Unpivot function.
+
+* Data modelling by creating relation/join between the three tables.
+
+* Reporting/generating insights using Excel reporting.
 
 
 # Below are the steps to complete this Case Study Analysis and Findings are documented at the end.
@@ -56,19 +60,27 @@ Uploaded Excel file named as FinalDataMart_Extract for exported data and Bar Gra
 
 **2022-attendance-data-final**
 -> school_code has Null/Blank value for school_name = "NSW government".
+
 -> Data for Year 2020 is missing. 
+
 -> There are some Junk Values like "na","sp",Nulls in all the Years columns.
+
 -> Needs to apply Unpivoting to convert all the years columns into raws.
 
 **2022-multi-age_composite-classes-final**
 -> There are some Null Values in the fields related to COMPOSITE Classes.
+
 -> Data for Year 2020 is missing and no data prior to 2014. 
+
 -> Needs to apply Unpivoting to convert all the Composite class columns into raws and extracting Years from the Composite class columns.
 
 **public_school_nsw_master_dataset**
 -> Some of the columns(Indigenous_pct,LBOTE_pct) have junk values like 'np'.
+
 -> Date Format of the column(Date_1st_teacher) is not consistent.
+
 -> AgeID has null value for two of the school codes ('8914', '5423').
+
 -> Nulls/Blanks are present in few other attribute columns.
 
 **Confirming there is a significant impact on Attendance due to multi-age composite classes for all the years,
