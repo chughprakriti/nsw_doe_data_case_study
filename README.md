@@ -1,6 +1,17 @@
 # New South Wales Department of Education (NSW DOE) - Data Case Study 🦘
 
-# The Case Study - All the work present in the Codespace and follow the steps below for better understanding.
+# The Case Study - All the work present in the Codespace.
+
+**This case study scenerio covers the below:**
+
+-> Data ingestion in the database by using CSV import methods.
+-> Analysed source data files as part of data quality checks like Nullability checks, Unique constraints, Formatting, Junk Values etc.
+-> Data transformation using SQL Unpivot function.
+-> Data modelling by creating relation/join between the three tables.
+-> Reporting/generating insights using Excel reporting.
+
+
+# Below are the steps to complete this Case Study Analysis and Findings are documented at the end.
 
 ## Step 1 - Download required CSVs data in the data folder of Codespace 
 
@@ -35,6 +46,12 @@ Trigger SQL Script(**/workspaces/nsw_doe_data_case_study/modelling/finaldatamart
 
 ## Step 5 - Completed data analysis in the Jupytor Notebook(/workspaces/nsw_doe_data_case_study/analysis/analysis-jupyter/example.ipynb) by applying filter on one School and by downloading the CSV extracts in the local desktop.
 
+## Step 6 - Exported CSV of FinalDataMart table in local desktop and generated Bar Graph report.
+
+Uploaded Excel file named as FinalDataMart_Extract for exported data and Bar Graph under ./analysis/ Folder.
+
+--------------------------------------------------------------------------------------------------------------------
+
 **Findings Below**:
 
 **2022-attendance-data-final**
@@ -48,12 +65,16 @@ Trigger SQL Script(**/workspaces/nsw_doe_data_case_study/modelling/finaldatamart
 -> Data for Year 2020 is missing and no data prior to 2014. 
 -> Needs to apply Unpivoting to convert all the Composite class columns into raws and extracting Years from the Composite class columns.
 
+**public_school_nsw_master_dataset**
+-> Some of the columns(Indigenous_pct,LBOTE_pct) have junk values like 'np'.
+-> Date Format of the column(Date_1st_teacher) is not consistent.
+-> AgeID has null value for two of the school codes ('8914', '5423').
+-> Nulls/Blanks are present in few other attribute columns.
 
-## Step 6 - Exported CSV of FinalDataMart table in local desktop and generated PIE Chart report.
+**Confirming there is a significant impact on Attendance due to multi-age composite classes for all the years,
+as shown in the screeen-shot below for one of the school.**
 
-Uploaded Excel file named as FinalDataMart_Extract for exported data and PIE chart under ./analysis/ Folder.
-
-Screen shot of the PIE Chart below for one of the school where school_code = 1001.
+Screen shot of the Bar Graph below for one of the school where school_code = 1001.
 
 ![Report Screen shot](.github/static/AnalysisReport.jpg)
 
